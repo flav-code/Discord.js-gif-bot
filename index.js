@@ -12,9 +12,9 @@ client.on("guildMemberUpdate", async (oldMember, newMember) => {
     if (!channel) return;
 
     const embed = new MessageEmbed()
-    .setColor('RANDOM')
-    .setDescription(`**${newMember.user.tag}**`)
-    .setImage(newMember.user.displayAvatarURL({ dynamic: true }));channel.send(embed);
+        .setColor('RANDOM')
+        .setDescription(`**${newMember.user.tag}**`)
+        .setImage(newMember.user.displayAvatarURL({ dynamic: true })); channel.send(embed);
 })
 
 client.login(config.token);
